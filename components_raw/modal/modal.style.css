@@ -1,0 +1,36 @@
+.ldgfx-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    min-width: 300px;
+}
+
+.ldgfx-modal-text-container{
+    padding: 24px;
+}
+
+.ldgfx-modal-button-container{
+    padding: 8px;
+    padding-left: 16px;
+}
+
+.ldgfx-modal-content{
+    white-space: normal!important;
+}
+
+.ldgfx-modal.ng-hide-add, 
+.ldgfx-modal.ng-hide-remove {
+  transition: all 0.05s ease-in-out;
+}
+
+.ldgfx-modal.ng-hide {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: .8;
+}
+
+.ldgfx-modal.ng-show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}

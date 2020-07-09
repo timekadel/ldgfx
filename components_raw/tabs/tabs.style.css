@@ -1,0 +1,169 @@
+tabs{
+    position: relative;
+    z-index: 10;
+}
+
+.ldgfx-tab{
+    list-style-type: none;
+    display: inline-flex;
+    color: rgba(255,255,255,.70);
+    padding-left: 12px;
+    padding-right: 12px;
+    background: transparent;
+    top: 0;
+    position: relative;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1!important;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: color .25s ease-in-out
+}
+
+.ldgfx-tabs-toolbar{
+    background:inherit;
+}
+
+.ldgfx-tab-borderbottom{
+    position: absolute;
+    bottom: 0px;
+    background: #FFFFFF;
+    height: 2px;
+    left:0px;
+    width: 100%;
+}
+
+.ldgfx-tab.active{
+    color: #FFFFFF;
+}
+
+.ldgfx-tab-content{
+    height: calc(100% - 112px);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: white;
+}
+
+.ldgfx-tab.forward > .ldgfx-tab-borderbottom.active{
+    animation: tab-forward-show .25s ease-in-out;
+    left:0px;
+    right: unset!important;
+}
+
+.ldgfx-tab.forward > .ldgfx-tab-borderbottom.ng-hide{
+    animation: tab-forward-hide .25s ease-in-out;
+    right: 0px!important; 
+    left: unset!important;
+}
+
+.ldgfx-tab.backward > .ldgfx-tab-borderbottom{
+    animation: tab-backward-show .25s ease-in-out;
+    right:0px;
+    left: unset;
+}
+
+.ldgfx-tab.backward > .ldgfx-tab-borderbottom.ng-hide{
+    animation: tab-backward-hide .25s ease-in-out;
+    left: 0px;
+    right: unset;
+}
+
+
+.ldgfx-tab:hover{
+    cursor: pointer;
+}
+
+
+@keyframes tab-forward-show{
+    from{
+        width: 0%;
+    }to{
+        width: 100%;
+    }
+}
+
+@keyframes tab-forward-hide{
+    from{
+        width: 100%;
+    }to{
+        width: 0%;
+    }
+}
+
+
+@keyframes tab-backward-show{
+    from{
+        width: 0%;
+    }to{
+        width: 100%;
+    }
+}
+
+@keyframes tab-backward-hide{
+    from{
+        width: 100%;
+    }to{
+        width: 0%;
+    }
+}
+
+.ldgfx-tab-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.ldgfx-tab-content.forward  > .ldgfx-tab-container{
+    animation: slideinTab .25s ease-in-out;
+}
+
+.ldgfx-tab-content.forward  > .ldgfx-tab-container.ng-hide-add-active  {
+    animation: slideoutTab .25s ease-in-out;
+    left:0px;
+}
+
+.ldgfx-tab-content.backward > .ldgfx-tab-container {
+    animation: slideinTabBackward .25s ease-in-out;
+}
+
+.ldgfx-tab-content.backward > .ldgfx-tab-container.ng-hide-add-active  {
+    animation: slideoutTabBackward .25s ease-in-out;
+    right:0px;
+}
+
+
+
+@keyframes slideinTab{
+    from{
+        right: -100%;
+    }to{
+        right:0px;
+    }
+}
+
+@keyframes slideoutTab{
+    from{
+        left: 0px;
+    }to{
+        left: -100%;
+    }
+}
+
+
+@keyframes slideinTabBackward{
+    from{
+        left: -100%;
+    }to{
+        left: 0px;
+    }
+}
+
+@keyframes slideoutTabBackward{
+    from{
+        right: 0px;
+    }to{
+        right: -100%;
+    }
+}

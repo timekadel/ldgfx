@@ -1,0 +1,20 @@
+
+/* Setting mediaqueries for responsive content display */
+/* extra small content */
+@media (max-width: 767px) {
+    .ldgfx-mobile-shadow{
+        box-shadow:  0 1px 3px rgba(0,0,0,.14), 
+                     0 1px 2px rgba(0,0,0,.24);
+    }
+    .ldgfx-mobile-hidden{
+        display: none;
+    }
+}
+
+/* Setting mediaqueries for responsive content display */
+/* extra small content */
+@media (min-width: 767px) {
+    .ldgfx-desktop-hidden{
+        display: none;
+    }
+}

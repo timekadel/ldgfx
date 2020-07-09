@@ -1,0 +1,32 @@
+.ldgfx-toast{
+    padding-left: 24px;
+    padding-right: 24px;
+    background: #323232;
+    height: 48px;
+    max-width: 800px;
+    width: 100%;
+    bottom:0px;
+    border-radius: 2px 2px 0 0;
+    word-wrap: normal;
+    white-space: nowrap;
+    position: fixed;
+    z-index: 20;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%,0%);
+    color: white;
+    box-sizing: border-box; 
+}
+
+.ldgfx-toast.ng-hide-add, 
+.ldgfx-toast.ng-hide-remove {
+  transition: all 0.25s ease-in-out;
+}
+
+.ldgfx-toast.ng-hide {
+    transform: translate(-50%,100%);
+}
+
+.ldgfx-toast.ng-show {
+    transform: translate(-50%,0%);
+}

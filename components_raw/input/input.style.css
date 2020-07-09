@@ -1,0 +1,184 @@
+
+/** 
+ * Checkbox Style override 
+ */
+.partials-input-checkbox {
+  display: none;
+}
+
+.partials-input-checkbox-icon {
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.partials-input-checkbox-uncheck{
+    display: initial;
+    color: #737373;
+}
+
+.partials-input-checkbox-checked{
+    display: none;
+    color: #FE6767;
+}
+
+.ldgfx-input-text{
+  margin-top:16px;
+}
+
+.ldgfx-ldgfx-inputelement-text {
+    border: none;
+    font-size: 20px;
+    background: none!important;
+    border-bottom: 2px solid transparent;
+    transition: all .25s ease-in-out;
+    color: black !important;
+}
+
+input[type="text"]{
+    border: none;
+    background: none!important;
+    color: #4b4b4b!important;
+    border-bottom: 2px solid transparent;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    transition: all .25s ease-in-out;
+}
+
+input[type="text"]:disabled{
+    border-color: transparent !important;
+    transition: all .25s ease-in-out;
+}
+
+input[type="text"]:required {
+  box-shadow: none;
+}
+
+
+input[type="email"]{
+    border: none;
+    background: none!important;
+    color: #4b4b4b!important;
+    border-bottom: 2px solid transparent;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    transition: all .25s ease-in-out;
+}
+
+input[type="email"]:disabled{
+    border-color: transparent !important;
+    transition: all .25s ease-in-out;
+}
+
+input[type="email"]:required {
+  box-shadow: none;
+}
+
+
+.ldgfx-input-text-icon{
+    color:rgba(75, 75, 75, 0.57);
+}
+
+input:checked + .partials-input-checkbox-icon .partials-input-checkbox-uncheck{
+    display: none;
+}
+
+input:checked + .partials-input-checkbox-icon .partials-input-checkbox-checked{
+    display: initial;
+    animation: partials-input-checkbox-fade .25s;
+}
+
+@keyframes partials-input-checkbox-fade {
+    from{
+        opacity: .4;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+/** 
+ * Radio Style override 
+ */
+ .partials-input-radio {
+  display: none;
+}
+
+.partials-input-radio-icon {
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.partials-input-radio-uncheck{
+    display: initial;
+    color: #737373;
+}
+
+.partials-input-radio-checked{
+    display: none;
+    color: #FE6767;
+}
+
+input:checked + .partials-input-radio-icon .partials-input-radio-uncheck{
+    display: none;
+}
+
+input:checked + .partials-input-radio-icon .partials-input-radio-checked{
+    display: initial;
+    animation: partials-input-radio-fade .25s;
+}
+
+@keyframes partials-input-radio-fade {
+    from{
+        opacity: .4;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+
+input[type=range] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    margin: 18px 0;
+    width: 100%;
+    height: 40px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-moz-focus-outer {
+    border: 0;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: #C7C7C7;
+}
+
+input[type="range"]::-moz-range-progress {
+    height: 2px;
+    background: #5E5E5E;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #5E5E5E;
+    cursor: pointer;
+    border: none;
+}
+
+input[type=range]:focus::-moz-range-thumb {
+    outline: none;
+    box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.1);
+}

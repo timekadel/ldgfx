@@ -1,0 +1,94 @@
+.ldgfx-avatar{
+    position: relative;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background: #E0E9EB;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    /*transition: all .25s ease-in-out;*/
+}
+
+.ldgfx-avatar-default{
+    height:85px;
+    width: 85px;
+    border-radius: 50%;
+    background: #D8E6FF;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.ldgfx-avatar-default-text{
+    margin: auto;
+    color: #FFFFFF;
+    font-family: roboto;
+}
+
+.ldgfx-avatar-upload-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all .25s ease-in-out
+}
+
+.ldgfx-avatar-upload-overlay:hover{
+    cursor: pointer;
+}
+
+.ldgfx-avatar-upload-overlay:hover > ldgfx-avatar-upload-icon-overlay{
+    display: inline-block;
+    opacity: 1;
+}
+
+
+.ldgfx-avatar-upload-icon-overlay{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.ldgfx-avatar-upload-icon-overlay > i{
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.ldgfx-avatar-xsmall{
+     height: 40px; 
+     width: 40px; 
+}
+
+.ldgfx-avatar-small{ 
+    height: 50px; 
+    width: 50px; 
+}
+
+.ldgfx-avatar-medium{
+     height: 70px; 
+     width: 70px;
+}
+
+.ldgfx-avatar-large{ 
+    height: 100px;
+    width: 100px; 
+}
+
+.ldgfx-avatar-xlarge{ 
+    height: 200px; 
+    width: 200px; 
+    font-size: 64px;
+}
+
+
+.ldgfx-avatar-circle{ 
+    border-radius: 50%; 
+}
+.ldgfx-avatar-square{ 
+    border-radius: 3px; 
+}

@@ -1,0 +1,43 @@
+.partials-ripple {
+    position: absolute;
+    border-radius: 100%;
+    pointer-events: none;
+    animation: partials-ripple-animate .5s ease-out;
+
+} 
+
+.partials-ripple-fixed {
+    position: absolute;
+    border-radius: 100%;
+    pointer-events: none;
+    left:50%;
+    top:50%;
+    transform: translate(-50% ,-50%);
+    animation: partials-ripple-animate-center .5s ease-out;
+} 
+
+@keyframes partials-ripple-animate{
+    to {
+        transform: scale(2,2);
+        opacity: 0;
+    }
+}
+
+@keyframes partials-ripple-animate-center{
+    to {
+        transform: translate(-50%, -50%) scale(1,1);
+        opacity: 0;
+    }
+}
+
+
+.partials-ripple-constant {
+    position: absolute;
+    border-radius: 100%;
+    pointer-events: none;
+    left:50%;
+    top:50%;
+    transform: translate(-50% ,-50%);
+    animation: partials-ripple-animate-center 1s infinite ease-out;
+}
+

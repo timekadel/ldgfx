@@ -1,0 +1,24 @@
+.ldgfx-backdrop {
+    background: #000000;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    opacity: .4;
+    z-index:50;
+}
+
+.ldgfx-backdrop.ng-hide-add, 
+.ldgfx-backdrop.ng-hide-remove {
+  transition: all 0.1s ease-in-out;
+}
+
+.ldgfx-backdrop.ng-hide {
+    opacity: 0;
+}
+
+.ldgfx-backdrop.ng-show {
+    opacity: .4;
+}

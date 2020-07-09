@@ -1,0 +1,105 @@
+
+/*==================================*
+ *       icon menu popup            *
+ *==================================*/
+
+.ldgfx-menu{
+    width: 24px;
+    position: relative;
+}
+
+.ldgfx-menu-card{
+    position: absolute;
+    z-index: 200;
+    overflow: hidden;
+    min-width: 180px;
+    height: auto;
+    border-radius: 3px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.ldgfx-menu-card.anchor-left{
+    right: 0px;
+}
+
+.ldgfx-menu-card.anchor-right{
+    left: 0px;
+}
+
+.ldgfx-menu-card.anchor-top{
+    bottom: 50px;
+}
+
+.ldgfx-menu-card.anchor-bottom{
+    top: 50px;
+}
+
+
+.ldgfx-menu-item{
+    text-align: left;
+    padding: 16px;
+    padding-left: 24px;
+}
+
+.ldgfx-menu-item:hover{
+   cursor: pointer;
+   background: #F5F5F5;
+}
+
+
+.ldgfx-menu-background{
+    background: transparent;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    z-index: 20;
+    cursor: default;
+}
+
+
+/** Toggle Animation */
+
+.ldgfx-menu-card.ng-hide-add, 
+.ldgfx-menu-card.ng-hide-remove {
+    transition: all 0.05s ease-in-out;
+}
+
+.ldgfx-menu-card.ng-hide {
+    transform: scale(.8);
+    opacity: .8;
+}
+
+.ldgfx-menu-card.ng-show {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+/*==================================*
+ *             list Menu            *
+ *==================================*/
+
+.ldgfx-list-menu-options {
+    position: absolute;
+    animation: slidein .25s ease-in-out!important;
+}
+
+.ldgfx-list-menu-options.ng-hide-add-active {
+    animation: slideinLeft .25s ease-in-out!important;
+}
+
+
+.ldgfx-list-menu-option {
+    position: absolute;
+    animation: slideoutLeft .25s ease-in-out!important;
+}
+
+.ldgfx-list-menu-option.ng-hide-add-active {
+    animation: slideout .25s ease-in-out!important;
+}

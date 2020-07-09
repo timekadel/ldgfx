@@ -1,0 +1,37 @@
+.ldgfx-toolbar{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding-left:16px;
+    padding-right:16px;
+    box-sizing: border-box;
+    flex-direction: row;
+    width:100%;
+    height: 56px;
+    z-index: 20;
+    background: inherit;
+}
+
+.ldgfx-toolbar-big{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding-left:16px;
+    padding-right:16px;
+    box-sizing: border-box;
+    flex-direction: row;
+    width:100%;
+    height: 72px;
+    z-index: 10;
+    background: inherit;
+}
+
+
+/* Setting mediaqueries for responsive content display */
+/* extra small content */
+@media (max-width: 767px) {
+  /*  .ldgfx-toolbar-big{
+        box-shadow: 0 1px 3px rgba(0,0,0,.14), 
+                    0 1px 2px rgba(0,0,0,.24);
+    }*/
+}

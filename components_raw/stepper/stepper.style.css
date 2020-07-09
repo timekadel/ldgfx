@@ -1,0 +1,151 @@
+.ldgfx-stepper-container{
+    position:relative;
+    z-index:100;
+    width: 100%!important;
+    height: calc(100% - 112px);
+    border-radius: 0px!important;
+    background: #FAFAFA;
+}
+
+.ldgfx-stepper-control-left{
+    color:black!important;
+    background:white!important;
+    height:40px!important;
+    width:40px!important;
+    position:absolute!important;
+    top:50%!important;
+    transform:translate(0%,-50%)!important;
+    left:-70px!important;
+}
+
+.ldgfx-stepper-control-right{
+    color:black!important;
+    background:white!important;
+    height:40px!important;
+    width:40px!important;
+    position:absolute!important;
+    top:50%!important;
+    transform:translate(0%,-50%)!important;
+    right:-70px!important;
+}
+
+.ldgfx-stepper-container-control-bottom{
+    font-size: 10px;
+    text-align:center;
+    display: inline-flex;
+}
+
+.ldfx-stepper-dot{
+    color: rgba(255,255,255,.54);
+    transition: color .25s ease-in-out;
+    margin-right: 8px !important;
+}
+
+.ldfx-stepper-dot.active{
+    color: rgba(255,255,255,.87)!important;
+    transition: color .25s ease-in-out;
+}
+
+.ldgfx-stepper-step-content{
+    position: absolute;
+    width: 100%;
+}
+
+.ldgfx-stepper-step-content.active{
+    visibility: initial!important;
+}
+
+.ldgfx-stepper-step-content-heading{
+    text-align: center;
+    color: rgba(0,0,0,.87);;
+    line-height: 32px;
+    font-family: roboto-regular;
+    font-size: 24px;
+    margin-top:32px!important;
+}
+
+.ldgfx-stepper-step-content-subheading{
+    text-align: center;
+    color: rgba(0,0,0,.54);
+    line-height: 32px;
+    font-family: roboto-regular;
+    font-size: 16px;
+}
+
+.ldgfx-stepper-step-content-button{
+    margin-top: 24px !important;
+}
+
+
+.ldgfx-stepper-step-content {
+    overflow: auto;
+    animation: slidein .25s ease-in-out;
+}
+
+
+.ldgfx-stepper-step-content.ng-leave-active {
+    animation: slideinLeft .25s ease-in-out;
+}
+
+.ldgfx-stepper-step-content.left {
+    animation: slideoutLeft .25s ease-in-out!important;
+}
+
+.ldgfx-stepper-step-content.left.ng-leave-active {
+    animation: slideout .25s ease-in-out!important;
+}
+
+/*
+.ldgfx-stepper-step-content.ng-hide-add-active {
+    animation: slideout .25s ease-in-out;
+}
+
+.ldgfx-stepper-step-content.left {
+    animation: slideoutLeft .25s ease-in-out!important;
+}
+
+.ldgfx-stepper-step-content.left.ng-hide-add-active {
+    animation: slideinLeft .25s ease-in-out!important;
+}
+*/
+
+
+.ldgfx-stepper-footer{
+    border-radius:0px;
+}
+
+.ldgfx-stepper-footer-step{
+    color: white;
+}
+
+@keyframes slideinLeft{
+    from{
+        left: 0px;
+    }to{
+        left:-600px;
+    }
+}
+
+@keyframes slideoutLeft{
+    from{
+        right: -600px;
+    }to{
+        right: 0px;
+    }
+}
+
+@keyframes slidein{
+    from{
+        left: -600px;
+    }to{
+        left:0px;
+    }
+}
+
+@keyframes slideout{
+    from{
+        right: 0px;
+    }to{
+        right:-600px;
+    }
+}

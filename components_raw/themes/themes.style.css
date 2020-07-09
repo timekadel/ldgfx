@@ -1,0 +1,602 @@
+
+/*
+ * Preparing default text colors based on element's opacity
+ * @see material guidelines 
+ * @link https://material.io/guidelines/style/color.html#color-usability
+ */
+
+.ldgfx-color-text-primary{
+    opacity:  .87;
+}
+
+.ldgfx-color-text-secondary{
+    opacity:  .54;
+}
+
+.ldgfx-color-text-accent{
+    color: greenyellow;
+}
+
+.ldgfx-color-text-disabled{
+    opacity:  .38;
+}
+
+.ldgfx-color-divider{
+    opacity:  .12;
+}
+
+.ldgfx-color-icon-hoverable:hover{
+    opacity:  1;
+    cursor: pointer;
+    transition: opacity .25s;
+}
+
+.ldgfx-color-icon-active{
+    opacity:  1;
+    transition: opacity .25s;
+}
+
+.ldgfx-color-icon-inactive{
+    opacity:  .38;
+}
+
+
+
+/*
+ * Preparing default light container shades
+ * @see material guidelines 
+ * @link https://material.io/guidelines/style/color.html#color-usability
+ */
+
+.ldgfx-color-light-300{
+    background-color: #E0E0E0;
+}
+
+.ldgfx-color-light-200{
+    background-color: #EAEAEA;
+}
+
+.ldgfx-color-light-100{
+    background-color: #F5F5F5;
+}
+
+.ldgfx-color-light-50{
+    background-color: #FAFAFA;
+}
+
+.ldgfx-color-light-0{
+    background-color: #FFFFFF;
+}
+
+.ldgfx-color-50{
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-100{
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-200{
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-300{
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-400{
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-500{
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-600{
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-700{
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-800{
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-900{
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-A100{
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-A200{
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-A400{
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-A700{
+    transition: all .25s ease-in-out;
+}
+
+/*
+ * Preparing default material color colors
+ * @see material guidelines 
+ * @link https://material.io/guidelines/style/color.html#color-usability
+ */
+
+/* Red ****************************************/
+
+.ldgfx-color-50.red{
+    background-color: #FFEBEE;
+    border-color: #FFEBEE;
+    color: #000000;
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-100.red{
+    background-color: #ffcdd2;
+    border-color: #ffcdd2;
+    color: #000000;
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-200.red{
+    background-color: #ef9a9a;
+    border-color: #ef9a9a;
+    color: #000000;
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-300.red{
+    background-color: #e57373;
+    border-color: #e57373;
+    color: #000000;
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-400.red{
+    background-color: #e57373;
+    border-color: #e57373;
+    color: #FFFFFF;
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-500.red{
+    background-color: #f44336;
+    border-color: #f44336;
+    color: #FFFFFF;
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-600.red{
+    background-color: #e53935;
+    border-color: #e53935;
+    color: #FFFFFF;
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-700.red{
+    background-color: #d32f2f;
+    border-color: #d32f2f;
+    color: #FFFFFF;
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-800.red{
+    background-color: #c62828;
+    border-color: #c62828;
+    color: #FFFFFF;
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-900.red{
+    background-color: #b71c1c;
+    border-color: #b71c1c;
+    color: #FFFFFF;
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-A100.red{
+    background-color: #ff8a80;
+    border-color: #ff8a80;
+    color: #000000;
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-A200.red{
+    background-color: #ff5252;
+    border-color: #ff5252;
+    color: #FFFFFF;
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-A400.red{
+    background-color: #ff1744;
+    border-color: #ff1744;
+    color: #FFFFFF;
+    transition: all .25s ease-in-out;
+}
+
+.ldgfx-color-A700.red{
+    background-color: #d50000;
+    border-color: #d50000;
+    color: #FFFFFF;
+    transition: all .25s ease-in-out;
+}
+
+
+.ldgfx-ink-50.red{
+    color: #FFEBEE;
+}
+
+.ldgfx-ink-100.red{
+    color: #ffcdd2;
+}
+
+.ldgfx-ink-200.red{
+    color: #ef9a9a;
+}
+
+.ldgfx-ink-300.red{
+    color: #e57373;
+    
+}
+
+.ldgfx-ink-400.red{
+    color: #e57373;
+}
+
+.ldgfx-ink-500.red{
+    color: #f44336;
+}
+
+.ldgfx-ink-600.red{
+    color: #e53935;
+}
+
+.ldgfx-ink-700.red{
+    color: #d32f2f;
+}
+
+.ldgfx-ink-800.red{
+    color: #c62828;
+}
+
+.ldgfx-ink-900.red{
+    color: #b71c1c;
+}
+
+.ldgfx-ink-A100.red{
+    color: #ff8a80;
+}
+
+.ldgfx-ink-A200.red{
+    color: #ff5252;
+}
+
+.ldgfx-ink-A400.red{
+    color: #ff1744;
+}
+
+.ldgfx-ink-A700.red{
+    color: #d50000;
+}
+
+
+/* Teal ****************************************/
+.ldgfx-color-50.teal{
+    background-color: #e0f2f1;
+    border-color: #e0f2f1;
+    color: #000000;
+}
+
+.ldgfx-color-100.teal{
+    background-color: #b2dfdb;
+    border-color: #b2dfdb;
+    color: #000000;
+}
+
+.ldgfx-color-200.teal{
+    background-color: #80cbc4;
+    border-color: #80cbc4;
+    color: #000000;
+}
+
+.ldgfx-color-300.teal{
+    background-color: #4db6ac;
+    border-color: #4db6ac;
+    color: #000000;
+}
+
+.ldgfx-color-400.teal{
+    background-color: #26a69a;
+    border-color: #26a69a;
+    color: #000000;
+}
+
+.ldgfx-color-500.teal{
+    background-color: #009688;
+    border-color: #009688;
+    color: #FFFFFF;
+}
+
+.ldgfx-color-600.teal{
+    background-color: #00897b;
+    border-color: #00897b;
+    color: #FFFFFF;
+}
+
+.ldgfx-color-700.teal{
+    background-color: #00796b;
+    color: #FFFFFF;
+}
+
+.ldgfx-color-800.teal{
+    background-color: #00695c;
+    border-color: #00695c;
+    color: #FFFFFF;
+}
+
+.ldgfx-color-900.teal{
+    background-color: #004d40;
+    border-color: #004d40;
+    color: #FFFFFF;
+}
+
+.ldgfx-color-A100.teal{
+    background-color: #a7ffeb;
+    border-color: #a7ffeb;
+    color: #000000;
+}
+
+.ldgfx-color-A200.teal{
+    background-color: #64ffda;
+    border-color: #64ffda;
+    color: #FFFFFF;
+}
+
+.ldgfx-color-A400.teal{
+    background-color: #1de9b6;
+    border-color: #1de9b6;
+    color: #FFFFFF;
+}
+
+.ldgfx-color-A700.teal{
+    background-color: #00bfa5;
+    border-color: #00bfa5;
+    color: #FFFFFF;
+}
+
+
+
+.ldgfx-ink-50.teal{
+    color: #e0f2f1;
+}
+
+.ldgfx-ink-100.teal{
+    color: #b2dfdb;
+}
+
+.ldgfx-ink-200.teal{
+    color: #80cbc4;
+}
+
+.ldgfx-ink-300.teal{
+    color: #4db6ac;
+}
+
+.ldgfx-ink-400.teal{
+    color: #26a69a;
+}
+
+.ldgfx-ink-500.teal{
+    color: #009688;
+}
+
+.ldgfx-ink-600.teal{
+    color: #00897b;
+}
+
+.ldgfx-ink-700.teal{
+    color: #00796b;
+}
+
+.ldgfx-ink-800.teal{
+    color: #00695c;
+}
+
+.ldgfx-ink-900.teal{
+    color: #004d40;
+}
+
+.ldgfx-ink-A100.teal{
+    color: #a7ffeb;
+}
+
+.ldgfx-ink-A200.teal{
+    color: #64ffda;
+}
+
+.ldgfx-ink-A400.teal{
+    color: #1de9b6;
+}
+
+.ldgfx-ink-A700.teal{
+    color: #00bfa5;
+}
+
+
+/* Blue Grey ****************************************/
+.ldgfx-color-50.bgrey{
+    background-color: #eceff1;
+    border-color: #eceff1;
+    color: #000000;
+}
+
+.ldgfx-color-100.bgrey{
+    background-color: #cfd8dc;
+    border-color: #cfd8dc;
+    color: #000000;
+}
+
+.ldgfx-color-200.bgrey{
+    background-color: #b0bec5;
+    border-color: #b0bec5;
+    color: #000000;
+}
+
+.ldgfx-color-300.bgrey{
+    background-color: #90a4ae;
+    border-color: #90a4ae;
+    color: #000000;
+}
+
+.ldgfx-color-400.bgrey{
+    background-color: #78909c;
+    border-color: #78909c;
+    color: #000000;
+}
+
+.ldgfx-color-500.bgrey{
+    background-color: #607d8b;
+    border-color: #607d8b;
+    color: #FFFFFF;
+}
+
+.ldgfx-color-600.bgrey{
+    background-color: #546e7a;
+    border-color: #546e7a;
+    color: #FFFFFF;
+}
+
+.ldgfx-color-700.bgrey{
+    background-color: #455a64;
+    border-color: #455a64;
+    color: #FFFFFF;
+}
+
+.ldgfx-color-800.bgrey{
+    background-color: #37474f;
+    border-color: #37474f;
+    color: #FFFFFF;
+}
+
+.ldgfx-color-900.bgrey{
+    background-color: #263238;
+    border-color: #263238;
+    color: #FFFFFF;
+}
+
+
+
+.ldgfx-ink-50.bgrey{
+    color: #e0f2f1;
+}
+
+.ldgfx-ink-100.bgrey{
+    color: #cfd8dc;
+}
+
+.ldgfx-ink-200.bgrey{
+    color: #b0bec5;
+}
+
+.ldgfx-ink-300.bgrey{
+    color: #90a4ae;
+}
+
+.ldgfx-ink-400.bgrey{
+    color: #78909c;
+}
+
+.ldgfx-ink-500.bgrey{
+    color: #607d8b;
+}
+
+.ldgfx-ink-600.bgrey{
+    color: #546e7a;
+}
+
+.ldgfx-ink-700.bgrey{
+    color: #455a64;
+}
+
+.ldgfx-ink-800.bgrey{
+    color: #37474f;
+}
+
+.ldgfx-ink-900.bgrey{
+    color: #263238;
+}
+
+
+
+
+/* Indigo ****************************************/
+.ldgfx-color-A200.indigo{
+    background-color: #536DFE;
+    color: white;
+}
+
+.ldgfx-color-700.indigo{
+    background-color: #303F9F;
+    color: white;
+}
+
+.ldgfx-color-500.indigo{
+    background-color: #3F51B5;
+    color: white;
+}
+
+.ldgfx-color-100.indigo{
+    background-color: #C5CAE9;
+    color: black;
+}
+
+/* lLght Blue ****************************************/
+.ldgfx-color-A200.lightblue{
+    background-color: #40c4ff;
+    color: white;
+}
+
+.ldgfx-color-700.lightblue{
+    background-color: #0288d1;
+    color: white;
+}
+
+.ldgfx-color-500.lightblue{
+    background-color: #03a9f4;
+    color: white;
+}
+
+.ldgfx-color-100.lightblue{
+    background-color: #80d8ff;
+    color: black;
+}
+
+/* Grey ****************************************/
+.ldgfx-color-700.grey{
+    background-color: #616161;
+    color: white;
+}
+
+.ldgfx-color-500.grey{
+    background-color: #9E9E9E;
+    color: black;
+}
+
+.ldgfx-color-200.grey{
+    background-color: #EEEEEE;
+    color: black;
+}
+
+.ldgfx-color-100.grey{
+    background-color: #F5F5F5;
+    color: black;
+}

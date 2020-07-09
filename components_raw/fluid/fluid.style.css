@@ -1,0 +1,28 @@
+.partials-fluid-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partials-fluid-container-column{
+    flex-direction: column;
+}
+
+.partials-fluid-container-row{
+    flex-direction: row;
+}
+
+.partials-fluid-column{
+    flex-direction: row;
+}
+
+.partials-fluid-row{
+    flex-direction: column;
+}
+ 
+.partials-fluid-flex{ 
+    flex: 1;
+}
+
+.partials-fluid-autoalign{ 
+    margin: auto;
+}

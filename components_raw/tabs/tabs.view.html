@@ -1,0 +1,9 @@
+<div ng-init="display(tabs[0])" class="ldgfx-tabs-toolbar">
+    <tool-bar class="ldgfx-tabs-toolbar" primary>
+        <li ripple autoalign ng-repeat="tab in tabs" ng-click="display(tab)" class="ldgfx-tab" ng-class="{active:tab.displayed,backward:backward,forward:!backward}">
+            <div class="ldgfx-tab-title ldgfx-textual-button" autoalign>{{ tab.title }}</div>
+            <div class="ldgfx-tab-borderbottom" ng-show="tab.displayed"></div>
+        </li>
+    </tool-bar>
+    <div ng-class="{backward:backward,forward:!backward}" class="ldgfx-tab-content" ng-transclude></div>
+</div>

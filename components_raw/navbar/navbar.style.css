@@ -1,0 +1,93 @@
+.ldgfx-nav-bar{
+    height: 100%;
+    background: #FFFFFF;
+    word-wrap: normal;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 20;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.ldgfx-nav-bar-left{
+    left:0px;
+    top:0px;
+    width: 400px;
+}
+
+.ldgfx-nav-bar-push{
+    position: relative;
+    z-index: 0;
+    width: 400px;
+    max-width: unset!important;
+}
+
+.ldgfx-nav-bar-right{
+    right:0px;
+    top:0px;
+    width: 400px;
+}
+
+
+.ldgfx-nav-bar.ng-hide-add, 
+.ldgfx-nav-bar.ng-hide-remove{
+  transition: all 0.25s ease-in-out;
+}
+
+.ldgfx-nav-bar-left.ng-hide {
+    transform: translate(-100%,0%);
+}
+
+.ldgfx-nav-bar-left.ng-show {
+    transform: translate(0%,0%);
+}
+
+.ldgfx-nav-bar-right.ng-hide {
+    transform: translate(100%,0%);
+}
+
+.ldgfx-nav-bar-right.ng-show {
+    transform: translate(0%,0%);
+}
+
+
+
+/* Setting mediaqueries for responsive content display */
+/* extra small content */
+@media (max-width: 767px) {
+    .ldgfx-nav-bar-push{
+        position: absolute;
+        z-index: 10!important; 
+        width: 100%!important;
+    }
+    .ldgfx-nav-bar-left{
+        width: 100%;
+    }
+}
+
+/* Small content */ 
+@media (min-width: 768px) and (max-width: 983px) {
+    .ldgfx-nav-bar-push{
+        position: relative;
+        z-index: 10;
+        width: 100%;
+    }
+}
+
+/* Medium content */ 
+@media (min-width: 984px) and (max-width: 1199px)  {
+    .ldgfx-nav-bar-push{
+        position: relative;
+        z-index: 0;
+        max-width: 400px!important;
+    }
+}
+
+/* Large content */
+@media (min-width: 1200px) {
+    .ldgfx-nav-bar-push{
+        position: relative;
+        z-index: 0;
+        max-width: 400px!important;
+    }
+}

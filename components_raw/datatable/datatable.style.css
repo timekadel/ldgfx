@@ -1,0 +1,83 @@
+
+.ldgfx-perfectlist{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FEFEFE;
+}
+
+.ldgfx-perfectlist-item{
+    position: relative;
+    min-height: 48px;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.ldgfx-perfectlist-item:last-child > .ldgfx-perfectlist-text{
+    border-bottom: 1px solid transparent;
+}
+
+.ldgfx-perfectlist-item:hover{
+    cursor: pointer;
+    background:#F5F5F5;
+}
+
+.ldgfx-perfectlist-item-big{
+    height: 72px;
+    min-height: 72px;
+}
+
+.ldgfx-perfectlist-item-small{
+    height: 56px;
+    min-height: 56px;
+}
+
+.ldgfx-perfectlist-item > .ldgfx-avatar{
+    position: relative;
+    flex: unset;
+    margin: auto;
+    margin-right: 16px;
+    margin-left: 12px;
+}
+
+.ldgfx-perfectlist-item > .ldgfx-avatar-default{
+    position: relative;
+    flex: unset;
+    margin: auto;
+    margin-right: 16px;
+    margin-left: 12px;
+}
+
+.ldgfx-perfectlist-text{
+    position: relative;
+    flex: 1;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.ldgfx-perfectlist-text > *{
+    margin: auto;
+    width: 100%;
+}
+
+.ldgfx-perfectlist-item > .ldgfx-menu{
+    position: relative;
+    flex: unset;
+    margin: auto;
+}
+
+.ldgfx-perfectlist-item-active{
+    background: #E9EBEB!important;
+    color: #454545!important;
+}

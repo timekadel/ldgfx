@@ -1,0 +1,42 @@
+.ldgfx-bottomsheet{
+    width: 100%;
+    max-width: 800px;
+    background: #FFFFFF;
+    word-wrap: normal;
+    white-space: nowrap;
+    position: fixed;
+    z-index: 20;
+    overflow: hidden;
+    bottom:0px;
+    height: auto;
+    left: 50%;
+    transform: translate(-50%,0);
+    box-sizing: border-box;
+    border-radius: 5px 5px 0 0 ;
+}
+
+.ldgfx-bottomsheet-header{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 0px 16px;
+}
+
+.ldgfx-bottomsheet-opened{
+    height: calc(100% - 50px);
+    max-height: 150px;
+    display: inherit;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.ldgfx-bottomsheet.ng-hide-add, 
+.ldgfx-bottomsheet.ng-hide-remove{
+  transition: all 0.25s ease-in-out;
+}
+
+.ldgfx-bottomsheet.ng-hide {
+    transform: translate(-50%,100%);
+}
+
+.ldgfx-bottomsheet.ng-show {
+    transform: translate(-50%,0%);
+}

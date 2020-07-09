@@ -1,0 +1,97 @@
+app-drawer{
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+.left-nav-bar{
+  width: 55px;
+  background-color: #263238;
+  display: inline-block;
+  height: calc(100% - 60px);
+  margin: 0px;
+  position: relative;
+  z-index: 60;
+  /*transition: width .15s;*/
+}
+ 
+.left-nav-bar > ul{
+  width: 55px;
+  background-color: #263238;
+  display: inline;
+  height: calc(100% - 60px);
+  margin: 0px; 
+  position: relative;
+  left: 0px;
+  padding: 0;
+  transition: width .15s;
+}
+
+.list-left-nav-bar > li{
+  color: rgba(163, 175, 183, 0.9)!important;
+  font-size: 18px;
+  position: relative;
+  left: 0px;
+  display: block;
+  height: 50px;
+  padding-top: 10px;
+}
+
+.list-left-nav-bar > li:hover{
+  color:#D5D8D9 !important;
+  cursor: pointer;
+  background-color: #2E3A40;
+  text-decoration: none !important;
+}
+
+.footer-left-nav-bar{
+  bottom: 0px;
+  width: 100%;
+  background-color: #1E2427;
+  position: absolute;
+  height: 60px;
+}
+
+.widget-left{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 10px;
+  color: inherit;
+  text-decoration: none !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+
+.widget-left > .fa{
+  width: 20px;
+}
+
+.widget-description{
+  position: relative;
+  display: inline;
+}
+
+/* Setting mediaqueries for responsive content display */
+
+/* extra small content */
+@media (max-width: 767px) {
+    .left-nav-bar{width:0px!important}
+    .left-nav-bar > ul{display: none;}
+}
+
+/* Small content */ 
+@media (min-width: 768px) and (max-width: 983px) {
+    .left-nav-bar{width:0px!important}
+    .left-nav-bar > ul{display: none;}
+}
+
+/* Medium content */ 
+@media (min-width: 984px) and (max-width: 1199px)  {
+
+}
+
+/* Large content */
+@media (min-width: 1200px) {
+
+}

@@ -1,0 +1,115 @@
+/**
+ * Overriding Button's outline style
+ */
+button{
+   outline:none;
+   border: none;
+   position: relative;
+   overflow: hidden;
+   color: inherit;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   border: 0;
+}
+
+.ldgfx-button-raised{
+    height: 36px;
+    min-width: 88px;
+    border-radius: 2px;
+    background: inherit;
+    color: inherit;
+    padding-left:16px;
+    padding-right:16px;
+}
+
+.ldgfx-button-flat{
+    height: 36px;
+    min-width: 64px;
+    border-radius: 2px;
+    background: transparent!important;
+    padding-left:8px;
+    padding-right:8px;
+    color: inherit;
+}  
+
+.ldgfx-button-fab{
+    position: absolute;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    background: inherit;
+    color: inherit;
+    bottom: 16px;
+    right: 16px;
+    transition: all .15s ease-in-out;
+    z-index:30;
+    animation: ldgfx-button-fab-animation .25s ease-in-out; 
+}
+
+@keyframes ldgfx-button-fab-animation{
+    from{
+        transform: scale(0);
+    }to{
+        transform: scale(1);
+    }
+}
+
+.ldgfx-button-fab-icon{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.ldgfx-button-fab-icon-more-option{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: inherit;
+    color: inherit;
+    bottom: 16px;
+    right: 24px;
+    background: #D1D3D4;
+    animation-fill-mode: forwards;
+    color: #606161!important;
+    z-index:30;
+}
+
+.ldgfx-button-fab-icon-more-tooltip{
+    background: rgba(0,0,0,.74);
+    border-radius: 2px;
+    right: 60px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    color: #FFFFFF;
+    padding: 4px 8px;
+    font-family: roboto;
+    white-space: nowrap;
+    top: 6px;
+    z-index:30;
+}
+
+.ldgfx-button-fab-icon-more-option:hover{
+    cursor: pointer;
+}
+
+.ldgfx-button-fab-icon-more-option.ng-hide-add,
+.ldgfx-button-fab-icon-more-option.ng-hide-remove{
+  transition: all 0.15s ease-in-out;
+}
+
+.ldgfx-button-fab-icon-more-option.ng-hide {
+    opacity: .2;
+    transform: scale(0);
+}
+
+.ldgfx-button-fab-icon-more-option.ng-show {
+    background: blue!important;
+}

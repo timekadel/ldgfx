@@ -1,0 +1,7 @@
+.partials-card-container{
+    background: #FFFFFF;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}

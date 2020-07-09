@@ -1,0 +1,28 @@
+
+.ldgfx-widget{
+    animation: ldgfx-pull-down .25s ease-in-out;
+}
+
+.ldgfx-widget.ng-hide {
+    animation: ldgfx-pull-up .25s ease-in-out;
+}
+
+
+
+
+@keyframes ldgfx-pull-down {
+    from{
+        max-height: 0px;
+    }to{
+        max-height: 500px;
+    }
+}
+
+
+@keyframes ldgfx-pull-up {
+    from{
+        max-height: 500px;
+    }to{
+        max-height: 0px;
+    }
+}
